@@ -1,3 +1,5 @@
-Para mi gusto, fue mas comodo usar EJS, ya que se me permitia usar codigo javascript mas fácil por la sintaxis y también por el hecho de que en los condicionales pueda comparar dos argumentos, a diferencia de Handlebars y Pug que los condicionales solo verificaban si una variable era "true o false".
+Para mi gusto, fue mas comodo usar EJS, ya que se me permitia usar codigo javascript mas fácil por la sintaxis 
+y también por el hecho de que en los condicionales pueda comparar dos argumentos, a diferencia de Handlebars y Pug 
+que los condicionales solo verificaban si una variable era "true o false".
 
 Pug y Handlebars me parecieron muy parecidos, pero Pug me parecio mas rapido de escribir por su metodo de cascada y sin tener que cerrar las etiquetas
