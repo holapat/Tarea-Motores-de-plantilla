@@ -1,0 +1,25 @@
+{{#if productosExisten}}
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr style="color: darkorange;">
+                <th>Nombre</th> 
+                <th>Precio</th>
+                <th>Imagen</th> 
+            </tr>
+            {{#each productos}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>${{this.price}}</td>
+                <td> <img src="{{this.img}}" alt="" width="30px"></td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+{{/if}}
+{{#unless productosExisten}}
+<table class="table table-dark">
+    <div class="container mt-3">
+        <h3 style="color: rgb(59, 58, 3); background-color: rgba(226, 226, 142, 0.973);">No se encontraron productos</h3>
+    </div>
+</table>
+{{/unless}}

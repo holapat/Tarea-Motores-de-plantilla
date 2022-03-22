@@ -1,0 +1,10 @@
+header 
+    include ./partials/header.pug
+
+body 
+    div(class="container mt-3")
+        h2(style="color: orange") Productos cargados 
+        include ./partials/tabla.pug
+
+        form(action="/" method="get")
+            button(class="btn btn-success mt-3 mb-5") Cargar nuevo producto

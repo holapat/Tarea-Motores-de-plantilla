@@ -1,0 +1,14 @@
+<header>
+    <%- include('./partials/encabezado.ejs') %>
+</header>
+<body>
+    <div class="container mt-3">
+        <h2 style="color: orange">Productos cargados</h2>
+        <%- include('./partials/tabla.ejs', productos) %>
+        
+        <form action="/" method="get">
+            <button class="btn btn-success mt-3 mb-5">Cargar nuevo producto</button>
+        </form>
+    </div>
+</body>
+<%- include('./partials/pie.ejs') %>

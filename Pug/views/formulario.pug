@@ -1,0 +1,31 @@
+header
+   include ./partials/header.pug
+   
+body
+    div(class="container mt-3")
+        div(class="jumbotron")
+            h1(style="color: blue") Ingrese datos
+            br
+
+            form(action="/productos" method="post")
+                div(class="form-group")
+                    label(for="nombre")
+                        b Nombre
+                    input(id="nombre" class="form-control" type="text" name="name" required)
+                    
+                div(class="form-group")
+                    label(for="precio")
+                        b Precio
+                    input(id="precio" class="form-control" type="number" name="price" required)
+
+                div(class="form-group")
+                    label(for="imagen")
+                        b URL imagen
+                    input(id="imagen" class="form-control" type="url" name="img" required)
+                    
+                button(class="btn btn-success mt-3 mb-5") Enviar
+
+            a(href="/productos" class="btn btn-success mt-3 mb-5") Ver productos cargados
+ 
+
+                    
